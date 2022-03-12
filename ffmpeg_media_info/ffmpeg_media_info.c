@@ -1,4 +1,5 @@
-//
+// clang -g -o mediainfo ffmpeg_media_info.c `pkg-config --libs libavutil libavformat`
+// ./mediainfo
 
 #include <libavutil/avutil.h>
 #include <libavformat/avformat.h>

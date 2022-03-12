@@ -1,6 +1,6 @@
 // clang -g -o mediainfo ffmpeg_media_info.c `pkg-config --libs libavutil libavformat`
 // ./mediainfo
-
+#include <stdio.h>
 #include <libavutil/avutil.h>
 #include <libavformat/avformat.h>
 
@@ -21,8 +21,6 @@ int main(){
     av_dump_format(fmt_ctx,0,"./test.mp4",0);//打印meta信息
 
     avformat_close_input(&fmt_ctx);
-
-
 
 
     return 0;
